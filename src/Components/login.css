@@ -1,0 +1,95 @@
+/* Scope all styles under .login-page to avoid affecting the rest of the app */
+.login-page {
+    /* General Reset for this component */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* Centering the login container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+    background: linear-gradient(135deg, #9b51e0, #00a3ff); /* Background gradient */
+
+    /* Main container */
+    .login-container {
+        position: relative;
+        max-width: 400px;
+        width: 100%;
+        background-color: white;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    /* Form Title */
+    .form-title {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    /* Input fields */
+    .custom-input {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+
+    /* Submit Button */
+    .form-button {
+        width: 100%;
+        padding: 10px;
+        background: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+    /* Google Sign-In Button */
+    .google-login-btn {
+        display: inline-flex;
+        align-items: center;
+        padding: 8px 12px;
+        background-color: #4285f4;
+        color: white;
+        border-radius: 5px;
+        margin-top: 20px;
+        font-size: 14px;
+        cursor: pointer;
+    }
+
+    .google-login-btn img {
+        width: 18px;
+        margin-right: 8px;
+    }
+
+    /* Error Message */
+    .text-danger {
+        color: #ff4b5c;
+        font-size: 14px;
+    }
+
+    /* Links */
+    .link {
+        color: #007bff;
+        text-decoration: none;
+    }
+
+    /* Telecom Logo */
+    .telecom-logo {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        width: 60px;
+    }
+}
